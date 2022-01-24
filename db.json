@@ -1,0 +1,52 @@
+{
+    "cats": [
+        {
+        "id": 1,
+        "name": "Cromulons",
+        "image": "https://miro.medium.com/max/1200/1*eu4dAuXCqJGM7vjKx3D8WA.png",
+        "age": "2 years old",
+        "Interested_In": true,
+        "Description": "This sweet kitty was picked up on the streets of Brooklyn and is ready to go home with you"
+        },
+        {
+        "id": 2,
+        "name": "Cromulons",
+        "image": "https://miro.medium.com/max/1200/1*eu4dAuXCqJGM7vjKx3D8WA.png",
+        "age": "2 years old",
+        "Interested_In": true,
+        "Description": "This sweet kitty was picked up on the streets of Brooklyn and is ready to go home with you"
+        },
+        {
+        "id": 3,
+        "name": "Cromulons",
+        "image": "https://miro.medium.com/max/1200/1*eu4dAuXCqJGM7vjKx3D8WA.png",
+        "age": "2 years old",
+        "Interested_In": true,
+        "Description": "This sweet kitty was picked up on the streets of Brooklyn and is ready to go home with you"
+        },
+        {
+        "id": 4,
+        "name": "Cromulons",
+        "image": "https://miro.medium.com/max/1200/1*eu4dAuXCqJGM7vjKx3D8WA.png",
+        "age": "2 years old",
+        "Interested_In": true,
+        "Description": "This sweet kitty was picked up on the streets of Brooklyn and is ready to go home with you"
+        },
+        {
+        "id": 5,
+        "name": "Cromulons",
+        "image": "https://miro.medium.com/max/1200/1*eu4dAuXCqJGM7vjKx3D8WA.png",
+        "age": "2 years old",
+        "Interested_In": true,
+        "Description": "This sweet kitty was picked up on the streets of Brooklyn and is ready to go home with you"
+        },
+        {
+        "id": 6,
+        "name": "Cromulons",
+        "image": "https://miro.medium.com/max/1200/1*eu4dAuXCqJGM7vjKx3D8WA.png",
+        "age": "2 years old",
+        "Interested_In": true,
+        "Description": "This sweet kitty was picked up on the streets of Brooklyn and is ready to go home with you"
+        }
+    ]
+}
