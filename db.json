@@ -5,7 +5,8 @@
         "name": "Cromulons",
         "image": "https://miro.medium.com/max/1200/1*eu4dAuXCqJGM7vjKx3D8WA.png",
         "age": "2 years old",
-        "Interested_In": true,
+        "likes": 1,
+        "Available": true,
         "Description": "This sweet kitty was picked up on the streets of Brooklyn and is ready to go home with you"
         },
         {
@@ -13,7 +14,8 @@
         "name": "Cromulons",
         "image": "https://miro.medium.com/max/1200/1*eu4dAuXCqJGM7vjKx3D8WA.png",
         "age": "2 years old",
-        "Interested_In": true,
+        "likes": 1,
+        "Available": true,
         "Description": "This sweet kitty was picked up on the streets of Brooklyn and is ready to go home with you"
         },
         {
@@ -21,7 +23,8 @@
         "name": "Cromulons",
         "image": "https://miro.medium.com/max/1200/1*eu4dAuXCqJGM7vjKx3D8WA.png",
         "age": "2 years old",
-        "Interested_In": true,
+        "likes": 1,
+        "Available": true,
         "Description": "This sweet kitty was picked up on the streets of Brooklyn and is ready to go home with you"
         },
         {
@@ -29,7 +32,8 @@
         "name": "Cromulons",
         "image": "https://miro.medium.com/max/1200/1*eu4dAuXCqJGM7vjKx3D8WA.png",
         "age": "2 years old",
-        "Interested_In": true,
+        "likes": 1,
+        "Available": true,
         "Description": "This sweet kitty was picked up on the streets of Brooklyn and is ready to go home with you"
         },
         {
@@ -37,7 +41,8 @@
         "name": "Cromulons",
         "image": "https://miro.medium.com/max/1200/1*eu4dAuXCqJGM7vjKx3D8WA.png",
         "age": "2 years old",
-        "Interested_In": true,
+        "likes": 1,
+        "Available": true,
         "Description": "This sweet kitty was picked up on the streets of Brooklyn and is ready to go home with you"
         },
         {
@@ -45,7 +50,8 @@
         "name": "Cromulons",
         "image": "https://miro.medium.com/max/1200/1*eu4dAuXCqJGM7vjKx3D8WA.png",
         "age": "2 years old",
-        "Interested_In": true,
+        "likes": 1,
+        "Available": true,
         "Description": "This sweet kitty was picked up on the streets of Brooklyn and is ready to go home with you"
         }
     ]
