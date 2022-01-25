@@ -2,57 +2,75 @@
     "cats": [
         {
         "id": 1,
-        "name": "Cromulons",
-        "image": "https://miro.medium.com/max/1200/1*eu4dAuXCqJGM7vjKx3D8WA.png",
-        "age": "2 years old",
+        "name": "Bonnie & Clyde",
+        "image": "https://flic.kr/p/2mZ3wVE",
+        "age": "8 months old",
         "likes": 1,
         "Available": true,
-        "Description": "This sweet kitty was picked up on the streets of Brooklyn and is ready to go home with you"
+        "Description": "This adorable brother-sister pair were found on 62nd Street. Clyde is quite sweet and affectionate. Big sister, Bonnie has a feisty side and loves to play. These two just want to be loved!"
         },
         {
         "id": 2,
-        "name": "Cromulons",
-        "image": "https://miro.medium.com/max/1200/1*eu4dAuXCqJGM7vjKx3D8WA.png",
-        "age": "2 years old",
+        "name": "Marley",
+        "image": "https://flic.kr/p/2mZc896",
+        "age": "4 months old",
         "likes": 1,
         "Available": true,
-        "Description": "This sweet kitty was picked up on the streets of Brooklyn and is ready to go home with you"
+        "Description": "This sweet boy was plucked from a driveway on 64th Street. His purrs are so loud! Marley is friendly with dogs and other cats. He is still learning to be a kitten and could really use your help!"
         },
         {
         "id": 3,
-        "name": "Cromulons",
-        "image": "https://miro.medium.com/max/1200/1*eu4dAuXCqJGM7vjKx3D8WA.png",
-        "age": "2 years old",
+        "name": "Lily & Alfie",
+        "image": "https://flic.kr/p/2mZ8kvz",
+        "age": "4 months old",
         "likes": 1,
         "Available": true,
-        "Description": "This sweet kitty was picked up on the streets of Brooklyn and is ready to go home with you"
+        "Description": "Lily and Alfie are too precious! This brother-sister duo play as hard as they love! Immediately friendly with humans, they also likes dogs, other cats and children. These two will keep you entertained all of the time!"
         },
         {
         "id": 4,
-        "name": "Cromulons",
-        "image": "https://miro.medium.com/max/1200/1*eu4dAuXCqJGM7vjKx3D8WA.png",
-        "age": "2 years old",
+        "name": "Whinnie",
+        "image": "https://flic.kr/p/2mZc8CY",
+        "age": "4 years old",
         "likes": 1,
         "Available": true,
-        "Description": "This sweet kitty was picked up on the streets of Brooklyn and is ready to go home with you"
+        "Description": "Whinnie is a confident street cat. She lived outside for many years before deciding she could use a little help from a kind human. Her ear is tipped as she was intended to be released but she warmed up to the inside life so quickly that she's here to stay!"
         },
         {
         "id": 5,
-        "name": "Cromulons",
-        "image": "https://miro.medium.com/max/1200/1*eu4dAuXCqJGM7vjKx3D8WA.png",
-        "age": "2 years old",
+        "name": "Mo",
+        "image": "https://flic.kr/p/2mZc8CC",
+        "age": "3 months old",
         "likes": 1,
         "Available": true,
-        "Description": "This sweet kitty was picked up on the streets of Brooklyn and is ready to go home with you"
+        "Description": "Baby Mo! Mo was caught along side his fiercely protective mothe and he couldn't be happier inside. He has CH, Cerebellar Hypoplasia, which is a syndrome that makes him a lttle wobbly when he walks. That doesn't stop him from playing and chasing toys though. This sweet kitten doesn't love dogs and children but is good with other cats."
         },
         {
         "id": 6,
-        "name": "Cromulons",
-        "image": "https://miro.medium.com/max/1200/1*eu4dAuXCqJGM7vjKx3D8WA.png",
-        "age": "2 years old",
+        "name": "Wink",
+        "image": "https://flic.kr/p/2mZ8VzU",
+        "age": "2.5 years old",
         "likes": 1,
         "Available": true,
-        "Description": "This sweet kitty was picked up on the streets of Brooklyn and is ready to go home with you"
+        "Description": "Wink is a one eyed cat from 64th Street. Her partial vision has never stopped her from leading a full life. While not quite a kitten anymore, Wink is as playful and as curious as a kitten. She loves to chase balls and she loves to watch the snow fall!"
+        },
+        {
+        "id": 7,
+        "name": "Luna",
+        "image": "https://flic.kr/p/2mZ3xuL",
+        "age": "3 years old",
+        "likes": 1,
+        "Available": true,
+        "Description": "Luna was the unofficial leader of her community on 66th Street.Confident, daring and friendly are just a few ways to describe her. She was older than many cats when she was caught but she immediately warmed up and proved that she can thrive anywhere. She will be the perfect solo pet in a home with a loving family."
+        },
+        {
+        "id": 8,
+        "name": "Queen Fifi",
+        "image": "https://flic.kr/p/2mZae6K",
+        "age": "6 years old",
+        "likes": 1,
+        "Available": true,
+        "Description": "Everyone on 65th Street knows Queen Fifi. The local kids and parents alike would stop to say hi to her when she passed by. She has always been a bright spot for anyone she has met. Her adjustment to living indoors was slow at first. Now she is truly the Queen of any space she is in!"
         }
     ]
 }
