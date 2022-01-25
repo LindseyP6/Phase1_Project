@@ -108,16 +108,16 @@ function addNewCat(event) {
     const newCatLocation = document.querySelector("#location").value
     
     const displayUserName = document.createElement("p")
-    displayUserName.textContent = userName
+    displayUserName.textContent = `Submitted by: ${userName}`
 
     const displayNewCatPic = document.createElement('img')
     displayNewCatPic.src = newCatPicture
 
     const displayNewCatName = document.createElement("p")
-    displayNewCatName.textContent = catName
+    displayNewCatName.textContent = `Cat Called: ${catName}`
 
     const displayCatLocation = document.createElement("p")
-    displayCatLocation.textContent = newCatLocation
+    displayCatLocation.textContent = `Cat Seen: ${newCatLocation}`
 
     newCatDiv.append(displayUserName, displayNewCatPic, displayNewCatName, displayCatLocation)
 }
