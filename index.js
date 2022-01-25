@@ -94,7 +94,31 @@ function displayCats(cats){
 
     })
 }
+const newCatDiv = document.querySelector('#newCats')
+const newCatForm = document.querySelector(".newCatForm")
 
-function checkIfCatIsAvailable(){
-    console.log('clicky click2')
+newCatForm.addEventListener('submit', addNewCat)
+
+function addNewCat(event) {
+    event.preventDefault();
+    console.log(event)
+    const userName = document.querySelector("#userName").value
+    const newCatPicture = document.querySelector("#catPicture").value
+    const catName = document.querySelector("#catName").value
+    const newCatLocation = document.querySelector("#location").value
+    
+    const displayUserName = document.createElement("p")
+    displayUserName.textContent = userName
+
+    const displayNewCatPic = document.createElement('img')
+    displayNewCatPic.src = newCatPicture
+
+    const displayNewCatName = document.createElement("p")
+    displayNewCatName.textContent = catName
+
+    const displayCatLocation = document.createElement("p")
+    displayCatLocation.textContent = newCatLocation
+
+    newCatDiv.append(displayUserName, displayNewCatPic, displayNewCatName, displayCatLocation)
 }
+

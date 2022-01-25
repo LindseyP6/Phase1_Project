@@ -72,5 +72,13 @@
         "Available": true,
         "Description": "Everyone on 65th Street knows Queen Fifi. The local kids and parents alike would stop to say hi to her when she passed by. She has always been a bright spot for anyone she has met. Her adjustment to living indoors was slow at first. Now she is truly the Queen of any space she is in!"
         }
+    ],
+    "userSubmittedCats": [
+        {
+            "userName": "",
+            "newCatPicture": "",
+            "catName": "",
+            "newCatLocation": ""
+        }
     ]
 }
