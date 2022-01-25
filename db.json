@@ -3,7 +3,7 @@
         {
         "id": 1,
         "name": "Bonnie & Clyde",
-        "image": "https://flic.kr/p/2mZ3wVE",
+        "image": "/images/BonnieClyde.jpg",
         "age": "8 months old",
         "likes": 1,
         "Available": true,
@@ -12,7 +12,7 @@
         {
         "id": 2,
         "name": "Marley",
-        "image": "https://flic.kr/p/2mZc896",
+        "image": "/images/Marley.jpg",
         "age": "4 months old",
         "likes": 1,
         "Available": true,
@@ -21,7 +21,7 @@
         {
         "id": 3,
         "name": "Lily & Alfie",
-        "image": "https://flic.kr/p/2mZ8kvz",
+        "image": "/images/AlieLily.jpg",
         "age": "4 months old",
         "likes": 1,
         "Available": true,
@@ -30,7 +30,7 @@
         {
         "id": 4,
         "name": "Whinnie",
-        "image": "https://flic.kr/p/2mZc8CY",
+        "image": "/images/Whinnie.png",
         "age": "4 years old",
         "likes": 1,
         "Available": true,
@@ -39,7 +39,7 @@
         {
         "id": 5,
         "name": "Mo",
-        "image": "https://flic.kr/p/2mZc8CC",
+        "image": "/images/Mo.png",
         "age": "3 months old",
         "likes": 1,
         "Available": true,
@@ -48,7 +48,7 @@
         {
         "id": 6,
         "name": "Wink",
-        "image": "https://flic.kr/p/2mZ8VzU",
+        "image": "/images/Wink.png",
         "age": "2.5 years old",
         "likes": 1,
         "Available": true,
@@ -57,7 +57,7 @@
         {
         "id": 7,
         "name": "Luna",
-        "image": "https://flic.kr/p/2mZ3xuL",
+        "image": "/images/Luna.png",
         "age": "3 years old",
         "likes": 1,
         "Available": true,
@@ -66,7 +66,7 @@
         {
         "id": 8,
         "name": "Queen Fifi",
-        "image": "https://flic.kr/p/2mZae6K",
+        "image": "/images/QueenFifi.png",
         "age": "6 years old",
         "likes": 1,
         "Available": true,
