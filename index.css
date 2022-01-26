@@ -38,7 +38,7 @@ h1 {
 
 .catCards p {
     font-size: 16px;
-    max-width: 75%;
+    max-width: 80%;
     display: block;
     margin: 0 auto;
 }
@@ -49,8 +49,8 @@ li {
 }
 
 .catCards img {
-    height: 300px;
-    width: 300px;
+    height: 340px;
+    width: 310px;
     display: block;
     margin: 0 auto;
 }
