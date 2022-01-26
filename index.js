@@ -19,12 +19,12 @@ function displayCats(cats){
         //create image for image name
         const catImage = document.createElement('img')
         catImage.src = cat.image
-        catImage.width = "300"
-        catImage.height = "300"
+        // catImage.width = "300"
+        // catImage.height = "300"
         catImage.className = "catPictures"
 
         //create p age
-        const catAge = document.createElement('p')
+        const catAge = document.createElement('li')
         catAge.textContent = cat.age
 
         //create p for description
@@ -34,8 +34,9 @@ function displayCats(cats){
         //create like button
         const catLikeButton = document.createElement('button')
         catLikeButton.innerText = "Like me!"
+        catLikeButton.className = "buttons"
         catLikeButton.setAttribute('id', cat.id)
-        const catLikeDisplay = document.createElement('p')
+        const catLikeDisplay = document.createElement('li')
         catLikeDisplay.textContent = cat.likes + " likes"
         catLikeButton.addEventListener('click', () => {
             //acess cat.likes and then when clicked updated catLikeDisplay
@@ -56,6 +57,7 @@ function displayCats(cats){
 
         //create available button
         const catAvailability = document.createElement('button')
+        catAvailability.className = "buttons"
         catAvailability.innerText = "Check Availability"
         catAvailability.setAttribute('id', cat.Available)
         catAvailability.addEventListener('click', () => {
@@ -68,6 +70,7 @@ function displayCats(cats){
                 availabilityText.appendChild(emailInput)
                 // submit button
                 const emailSubmit = document.createElement('button')
+                emailSubmit.className = "emailSubmit"
                 emailSubmit.textContent = "Submit"
                 availabilityText.appendChild(emailSubmit)
                 emailSubmit.addEventListener('click', (e) => {
@@ -85,6 +88,7 @@ function displayCats(cats){
         const availabilityText = document.createElement('p')
         availabilityText.textContent = ''
         availabilityText.hidden = true;
+        availabilityText.className = "availability"
 
         //add all above elements to catDiv
         //append catDiv to catContainer
@@ -108,9 +112,11 @@ function addNewCat(event) {
     const newCatLocation = document.querySelector("#location").value
     
     const displayUserName = document.createElement("p")
-    displayUserName.textContent = `Submitted by: ${userName}`
+    displayUserName.textContent = `Submitted By: ${userName}`
 
     const displayNewCatPic = document.createElement('img')
+    displayNewCatPic.height = "250"
+    displayNewCatPic.width = "250"
     displayNewCatPic.src = newCatPicture
 
     const displayNewCatName = document.createElement("p")
@@ -118,6 +124,7 @@ function addNewCat(event) {
 
     const displayCatLocation = document.createElement("p")
     displayCatLocation.textContent = `Cat Seen: ${newCatLocation}`
+    displayCatLocation.style.marginBottom = "100px"
 
     newCatDiv.append(displayUserName, displayNewCatPic, displayNewCatName, displayCatLocation)
 }

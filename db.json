@@ -15,7 +15,7 @@
         "image": "/images/Marley.jpg",
         "age": "4 months old",
         "likes": 2,
-        "Available": true,
+        "Available": false,
         "Description": "This sweet boy was plucked from a driveway on 64th Street. His purrs are so loud! Marley is friendly with dogs and other cats. He is still learning to be a kitten and could really use your help!"
         },
         {
@@ -69,7 +69,7 @@
         "image": "/images/QueenFifi.png",
         "age": "6 years old",
         "likes": 2,
-        "Available": true,
+        "Available": false,
         "Description": "Everyone on 65th Street knows Queen Fifi. The local kids and parents alike would stop to say hi to her when she passed by. She has always been a bright spot for anyone she has met. Her adjustment to living indoors was slow at first. Now she is truly the Queen of any space she is in!"
         }
     ],
