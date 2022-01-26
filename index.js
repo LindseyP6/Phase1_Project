@@ -105,7 +105,6 @@ newCatForm.addEventListener('submit', addNewCat)
 
 function addNewCat(event) {
     event.preventDefault();
-    console.log(event)
     const userName = document.querySelector("#userName").value
     const newCatPicture = document.querySelector("#catPicture").value
     const catName = document.querySelector("#catName").value
@@ -126,6 +125,27 @@ function addNewCat(event) {
     displayCatLocation.textContent = `Cat Seen: ${newCatLocation}`
     displayCatLocation.style.marginBottom = "100px"
 
+    const newCat = {
+        userName: document.querySelector("#userName").value,
+        newCatPicture: document.querySelector("#catPicture").value,
+        catName: document.querySelector("#catName").value,
+        newCatLocation: document.querySelector("#location").value
+    }
+
+    addNewCatToServer(newCat)
+    // console.log(newCat)
     newCatDiv.append(displayUserName, displayNewCatPic, displayNewCatName, displayCatLocation)
 }
 
+function addNewCatToServer(newCat) {
+    fetch("http://localhost:3000/userSubmittedCats", {
+        METHOD: 'POST',
+        Headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        Body: JSON.stringify(newCat)
+    })
+    .then(resp => resp.json())
+    .then(newCat => console.log(newCat))
+}

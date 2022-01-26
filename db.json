@@ -75,10 +75,12 @@
     ],
     "userSubmittedCats": [
         {
-            "userName": "",
-            "newCatPicture": "",
-            "catName": "",
-            "newCatLocation": ""
+        "userName": "",
+        "newCatPicture": "",
+        "catName": "",
+        "newCatLocation": "",
+        "id": 1,
         }
+        
     ]
 }
