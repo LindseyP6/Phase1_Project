@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Luna",
-      "image": "/images/LunaLu.png",
+      "image": "./images/LunaLu.png",
       "age": "3 years old",
       "likes": 10,
       "Available": true,
@@ -12,25 +12,25 @@
     {
       "id": 2,
       "name": "Marley",
-      "image": "/images/Marley.jpg",
+      "image": "./images/Marley.jpg",
       "age": "4 months old",
-      "likes": 10,
+      "likes": 11,
       "Available": false,
       "Description": "This sweet boy was plucked from a driveway on 64th Street. His purrs are so loud! Marley is friendly with dogs and other cats. He is still learning to be a kitten and could really use your help!"
     },
     {
       "id": 3,
       "name": "Pirate Jenny",
-      "image": "/images/piratejenny.png",
+      "image": "./images/piratejenny.png",
       "age": "2 months old",
-      "likes": 17,
+      "likes": 18,
       "Available": false,
       "Description": "Pirate Jenny was brought inside when she was just a few weeks old. She is a fiesty fighter but this little kitten is such a lover; she will give you kisses and licks! She might only have 1 eye but that doesn't stop her from lving her best cat life."
     },
     {
       "id": 4,
       "name": "Lily & Alfie",
-      "image": "/images/AlieLily.jpg",
+      "image": "./images/AlieLily.jpg",
       "age": "4 months old",
       "likes": 3,
       "Available": true,
@@ -39,7 +39,7 @@
     {
       "id": 5,
       "name": "Whinnie",
-      "image": "/images/Whinnie.png",
+      "image": "./images/Whinnie.png",
       "age": "4 years old",
       "likes": 2,
       "Available": true,
@@ -48,7 +48,7 @@
     {
       "id": 6,
       "name": "Mo",
-      "image": "/images/Mo.png",
+      "image": "./images/Mo.png",
       "age": "3 months old",
       "likes": 8,
       "Available": true,
@@ -57,7 +57,7 @@
     {
       "id": 7,
       "name": "Wink",
-      "image": "/images/Wink.png",
+      "image": "./images/Wink.png",
       "age": "2.5 years old",
       "likes": 7,
       "Available": true,
@@ -66,7 +66,7 @@
     {
       "id": 8,
       "name": "Marley",
-      "image": "/images/BonnieClyde.jpg",
+      "image": "./images/BonnieClyde.jpg",
       "age": "3 months old",
       "likes": 6,
       "Available": false,
@@ -75,7 +75,7 @@
     {
       "id": 9,
       "name": "Queen Fifi",
-      "image": "/images/QueenFifi.png",
+      "image": "./images/QueenFifi.png",
       "age": "6 years old",
       "likes": 12,
       "Available": false,
@@ -96,6 +96,11 @@
       "userEmail": "test@test.com",
       "userInterestedIn": "Luna",
       "id": 0
+    },
+    {
+      "userEmail": "test@test.com",
+      "userInterestedIn": "Luna",
+      "id": 1
     }
   ]
 }

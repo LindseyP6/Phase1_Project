@@ -41,6 +41,7 @@ h1 {
     max-width: 80%;
     display: block;
     margin: 0 auto;
+    text-align: center;
 }
 
 li {
@@ -60,6 +61,8 @@ li {
     display: block;
     margin: 0 auto;
     margin-bottom: 10px;
+    background-color: #c6dde5;
+    border: none;
 }
 
 .availability {
@@ -71,12 +74,12 @@ li {
 
 }
 
-.buttons {
+/* .buttons {
     width: 80px;
     height: 40px;
     display: block;
     margin: auto;
     background-color: #c6dde5;
     border: none;
-}
+} */
 
