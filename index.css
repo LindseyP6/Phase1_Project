@@ -71,3 +71,12 @@ li {
 
 }
 
+.buttons {
+    width: 80px;
+    height: 40px;
+    display: block;
+    margin: auto;
+    background-color: #c6dde5;
+    border: none;
+}
+

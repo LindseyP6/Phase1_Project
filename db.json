@@ -5,7 +5,7 @@
       "name": "Luna",
       "image": "/images/LunaLu.png",
       "age": "3 years old",
-      "likes": 7,
+      "likes": 10,
       "Available": true,
       "Description": "Luna was the unofficial leader of her community on 66th Street.Confident, daring and friendly are just a few ways to describe her. She was older than many cats when she was caught but she immediately warmed up and proved that she can thrive anywhere. She will be the perfect solo pet in a home with a loving family."
     },
@@ -14,7 +14,7 @@
       "name": "Marley",
       "image": "/images/Marley.jpg",
       "age": "4 months old",
-      "likes": 9,
+      "likes": 10,
       "Available": false,
       "Description": "This sweet boy was plucked from a driveway on 64th Street. His purrs are so loud! Marley is friendly with dogs and other cats. He is still learning to be a kitten and could really use your help!"
     },
@@ -23,7 +23,7 @@
       "name": "Pirate Jenny",
       "image": "/images/piratejenny.png",
       "age": "2 months old",
-      "likes": 16,
+      "likes": 17,
       "Available": false,
       "Description": "Pirate Jenny was brought inside when she was just a few weeks old. She is a fiesty fighter but this little kitten is such a lover; she will give you kisses and licks! She might only have 1 eye but that doesn't stop her from lving her best cat life."
     },

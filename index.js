@@ -14,31 +14,6 @@ function getNewCats() {
     .then(cats => displayNewCats(cats))
 }
 
-function incrementLikes(cat) {
-    let likes = cat.likes
-    fetch(`"http://localhost:3000/cats/${cat.id}`)
-    .then(res => res.json())
-    .then((data) => {
-        likes = data.likes
-    })
-
-    let newLikes = likes + 1
-
-    fetch(`http://localhost:3000/cats/${cat.id}`, {
-        method: "PATCH",
-        headers: {
-            "Content-Type": "application/json",
-            "Accept": "application/json"
-        },
-        body: JSON.stringify({
-            "likes": newLikes
-        })
-    })
-
-    let likesText = `${newLikes} likes`
-    return likesText
-}
-
 function displayCats(cats) {
     cats.forEach(cat => {
         const catDiv = document.createElement('div')
@@ -60,13 +35,28 @@ function displayCats(cats) {
         const catLikeButton = document.createElement('button')
         catLikeButton.innerText = "Like me!"
         catLikeButton.className = "buttons"
-        catLikeButton.id = "likebutton"
+        catLikeButton.setAttribute('id', cat.id)
+        catLikeButton.type = "button"
 
         const catLikeDisplay = document.createElement('li')
         catLikeDisplay.textContent = cat.likes + " likes"
 
         catLikeButton.addEventListener('click', () => {
-            catLikeDisplay.innerHTML = incrementLikes(cat)
+            newLikes = cat.likes + 1
+            fetch(`http://localhost:3000/cats/${cat.id}`, {
+                method: "PATCH",
+                body: JSON.stringify({
+                    likes: newLikes
+                }),
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            })
+            .then(response => response.json())
+            .then(json => console.log(json))
+
+            catLikeDisplay.textContent = newLikes + " likes"
+            catLikeButton.innerText = "Liked!"
         })
 
         const catAvailability = document.createElement('button')
