@@ -42,7 +42,7 @@ function displayCats(cats) {
         catLikeDisplay.textContent = cat.likes + " likes"
 
         catLikeButton.addEventListener('click', () => {
-            newLikes = cat.likes + 1
+            newLikes = cat.likes += 1
             fetch(`http://localhost:3000/cats/${cat.id}`, {
                 method: "PATCH",
                 body: JSON.stringify({
