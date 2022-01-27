@@ -1,6 +1,6 @@
-const catContainer = document.querySelector("#catContainer");
-const newCatContainer = document.querySelector(".addedCats");
-const newCatForm = document.querySelector(".newCatForm");
+const catContainer = document.querySelector("#catContainer")
+const newCatContainer = document.querySelector(".addedCats")
+const newCatForm = document.querySelector(".newCatForm")
 
 function getCats() {
     fetch("http://localhost:3000/cats")
@@ -12,6 +12,31 @@ function getNewCats() {
     fetch("http://localhost:3000/userSubmittedCats")
     .then(res => res.json())
     .then(cats => displayNewCats(cats))
+}
+
+function incrementLikes(cat) {
+    let likes = cat.likes
+    fetch(`"http://localhost:3000/cats/${cat.id}`)
+    .then(res => res.json())
+    .then((data) => {
+        likes = data.likes
+    })
+
+    let newLikes = likes + 1
+
+    fetch(`http://localhost:3000/cats/${cat.id}`, {
+        method: "PATCH",
+        headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+        },
+        body: JSON.stringify({
+            "likes": newLikes
+        })
+    })
+
+    let likesText = `${newLikes} likes`
+    return likesText
 }
 
 function displayCats(cats) {
@@ -41,20 +66,7 @@ function displayCats(cats) {
         catLikeDisplay.textContent = cat.likes + " likes"
 
         catLikeButton.addEventListener('click', () => {
-            newLikes = cat.likes + 1
-            fetch(`http://localhost:3000/cats/${cat.id}`, {
-                method: "PATCH",
-                body: JSON.stringify({
-                    likes: newLikes
-                }),
-                headers: {
-                    "Content-Type": "application/json"
-                }
-            })
-            .then(response => response.json())
-            .then(json => console.log(json))
-
-            catLikeDisplay.textContent = newLikes + " likes"
+            catLikeDisplay.innerHTML = incrementLikes(cat)
         })
 
         const catAvailability = document.createElement('button')
