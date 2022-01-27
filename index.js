@@ -1,17 +1,20 @@
-document.addEventListener('DOMContentLoaded',fetchCats)
+const catContainer = document.querySelector("#catContainer");
+const newCatContainer = document.querySelector(".addedCats");
+const newCatForm = document.querySelector(".newCatForm");
 
-function fetchCats(){
+function getCats() {
     fetch("http://localhost:3000/cats")
-    .then(response => response.json())
+    .then(res => res.json())
     .then(cats => displayCats(cats))
 }
 
-const newCatDiv = document.querySelector('#newCats')
-const newCatForm = document.querySelector(".newCatForm")
-const catContainer = document.querySelector('#catContainer')
-newCatForm.addEventListener('submit', addNewCat)
+function getNewCats() {
+    fetch("http://localhost:3000/userSubmittedCats")
+    .then(res => res.json())
+    .then(cats => displayNewCats(cats))
+}
 
-function displayCats(cats){
+function displayCats(cats) {
     cats.forEach(cat => {
         const catDiv = document.createElement('div')
         catDiv.className = "catCards"
@@ -32,25 +35,41 @@ function displayCats(cats){
         const catLikeButton = document.createElement('button')
         catLikeButton.innerText = "Like me!"
         catLikeButton.className = "buttons"
-        catLikeButton.setAttribute('id', cat.id)
+        catLikeButton.id = "likebutton"
+
         const catLikeDisplay = document.createElement('li')
         catLikeDisplay.textContent = cat.likes + " likes"
+
         catLikeButton.addEventListener('click', () => {
- 
-            const newLikes = parseInt(catLikeDisplay.textContent) + 1
+            newLikes = cat.likes + 1
+            fetch(`http://localhost:3000/cats/${cat.id}`, {
+                method: "PATCH",
+                body: JSON.stringify({
+                    likes: newLikes
+                }),
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            })
+            .then(response => response.json())
+            .then(json => console.log(json))
+
             catLikeDisplay.textContent = newLikes + " likes"
-            //potential: patch request to update server with like count
         })
 
         const catAvailability = document.createElement('button')
         catAvailability.className = "buttons"
         catAvailability.innerText = "Check Availability"
-        catAvailability.setAttribute('id', cat.Available)
+
+        const availabilityText = document.createElement('p')
+        availabilityText.hidden = true
+        availabilityText.className = "availability"
+
         catAvailability.addEventListener('click', () => {
             if (cat.Available) {
                 availabilityText.hidden = false
                 availabilityText.textContent = "Available! Enter your email here: "
-    
+
                 const emailInput = document.createElement('input')
                 emailInput.setAttribute('type', 'email')
                 availabilityText.appendChild(emailInput)
@@ -59,69 +78,99 @@ function displayCats(cats){
                 emailSubmit.className = "emailSubmit"
                 emailSubmit.textContent = "Submit"
                 availabilityText.appendChild(emailSubmit)
-                emailSubmit.addEventListener('click', (e) => {
+
+                emailSubmit.addEventListener('click', () => {
                     availabilityText.textContent = "Thank you for submitting your email. We'll reach out to you soon!"
                     emailSubmit.hidden = true
                     emailInput.hidden = true
+
+                    let newEmail = {
+                        "id": getId("userEmails"),
+                        "userEmail": emailInput.value,
+                        "userInterestedIn": cat.name
+                    }
+
+                    fetch("http://localhost:3000/userEmails", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                            "Accept": "application/json"
+                        },
+                        body: JSON.stringify(newEmail)
+                    })
                 })
             } else {
                 availabilityText.hidden = false
                 availabilityText.textContent = "Sorry, this cat is not available."
             }
         })
-        const availabilityText = document.createElement('p')
-        availabilityText.textContent = ''
-        availabilityText.hidden = true;
-        availabilityText.className = "availability"
+        
 
         catDiv.append(catName, catImage, catAge, catDescription, catLikeDisplay, catLikeButton, catAvailability, availabilityText)
         catContainer.append(catDiv)
-
     })
 }
 
-function addNewCat(event) {
-    event.preventDefault();
-    const userName = document.querySelector("#userName").value
-    const newCatPicture = document.querySelector("#catPicture").value
-    const catName = document.querySelector("#catName").value
-    const newCatLocation = document.querySelector("#location").value
-    
-    const displayUserName = document.createElement("p")
-    displayUserName.textContent = `Submitted By: ${userName}`
-
-    const displayNewCatPic = document.createElement('img')
-    displayNewCatPic.height = "250"
-    displayNewCatPic.width = "250"
-    displayNewCatPic.src = newCatPicture
-
-    const displayNewCatName = document.createElement("p")
-    displayNewCatName.textContent = `Cat Called: ${catName}`
-
-    const displayCatLocation = document.createElement("p")
-    displayCatLocation.textContent = `Cat Seen: ${newCatLocation}`
-    displayCatLocation.style.marginBottom = "100px"
-
-    // const newCat = {
-    //     userName: document.querySelector("#userName").value,
-    //     newCatPicture: document.querySelector("#catPicture").value,
-    //     catName: document.querySelector("#catName").value,
-    //     newCatLocation: document.querySelector("#location").value
-    // }
-
-    // addNewCatToServer(newCat)
-    newCatDiv.append(displayUserName, displayNewCatPic, displayNewCatName, displayCatLocation)
+function getId(target) {
+    fetch(`http://localhost:3000/${target}`)
+    .then(res => res.json())
+    .then((data) => {
+    return data.length + 1;
+    })
 }
 
-// function addNewCatToServer(newCat) {
-//     fetch("http://localhost:3000/userSubmittedCats", {
-//         METHOD: 'POST',
-//         Headers: {
-//             'Content-Type': 'application/json',
-//             'Accept': 'application/json'
-//         },
-//         Body: JSON.stringify(newCat)
-//     })
-//     .then(resp => resp.json())
-//     .then(newCat => console.log(newCat))
-// }
+function addNewCat(username, catpic, catname, catlocation) {
+    let newCat = {
+        "id": getId("userSubmittedCats"),
+        "userName": username,
+        "newCatPicture": catpic,
+        "catName": catname,
+        "newCatLocation": catlocation,
+    }
+
+    fetch("http://localhost:3000/userSubmittedCats", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+        },
+        body: JSON.stringify(newCat)
+    })
+
+    displayNewCats(newCat)
+}
+
+function displayNewCats(cats) {
+    cats.forEach(cat => {
+        const newCatDiv = document.createElement("div")
+        newCatDiv.className = "newCatCards"
+
+        const displayUserName = document.createElement("p")
+        displayUserName.textContent = `Submitted by: ${cat.userName}`
+
+        const displayCatPic = document.createElement("img")
+        displayCatPic.src = cat.newCatPicture
+        displayCatPic.height = "250"
+        displayCatPic.width = "250"
+
+        const displayNewCatName = document.createElement("p")
+        displayNewCatName.textContent = `Cat Called: ${cat.catName}`
+
+        const displayCatLocation = document.createElement("p")
+        displayCatLocation.textContent = `Cat Seen: ${cat.newCatLocation}`
+        displayCatLocation.style.marginBottom = "100px"
+
+        newCatDiv.append(displayUserName, displayCatPic, displayNewCatName, displayCatLocation)
+        newCatContainer.append(newCatDiv)
+    })
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    console.log('loaded')
+    getCats()
+    getNewCats()
+    newCatForm.addEventListener('submit', (e) => {
+        e.preventDefault()
+        addNewCat(e.target.name.value, e.target.pic.value, e.target.cat.value, e.target.location.value)
+    })
+})
