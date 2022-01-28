@@ -71,6 +71,12 @@ li {
     margin-left: 12px;
 }
 
+#newCats h4 ,
+#newCats h3 {
+    margin: 12px;
+    margin-left: 0px;
+}
+
 .addedCats {
     display: flex;
     Flex-direction: row;
