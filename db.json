@@ -5,25 +5,25 @@
       "name": "Luna",
       "image": "./images/LunaLu.png",
       "age": "3 years old",
-      "likes": 10,
+      "likes": 5,
       "Available": true,
-      "Description": "Luna was the unofficial leader of her community on 66th Street.Confident, daring and friendly are just a few ways to describe her. She was older than many cats when she was caught but she immediately warmed up and proved that she can thrive anywhere. She will be the perfect solo pet in a home with a loving family."
+      "Description": "Luna was the unofficial leader of her community on 95th Street.Confident, daring and friendly are just a few ways to describe her. This purrfect cat can thrive anywhere. She will be the perfect solo pet in any home."
     },
     {
       "id": 2,
       "name": "Marley",
       "image": "./images/Marley.jpg",
       "age": "4 months old",
-      "likes": 11,
+      "likes": 6,
       "Available": false,
-      "Description": "This sweet boy was plucked from a driveway on 64th Street. His purrs are so loud! Marley is friendly with dogs and other cats. He is still learning to be a kitten and could really use your help!"
+      "Description": "This sweet boy was plucked from a driveway on 94th Street. His purrs are so loud! Marley is friendly with dogs and other cats. He is still learning to be a kitten and could really use your help!"
     },
     {
       "id": 3,
       "name": "Pirate Jenny",
       "image": "./images/piratejenny.png",
       "age": "2 months old",
-      "likes": 18,
+      "likes": 11,
       "Available": false,
       "Description": "Pirate Jenny was brought inside when she was just a few weeks old. She is a fiesty fighter but this little kitten is such a lover; she will give you kisses and licks! She might only have 1 eye but that doesn't stop her from lving her best cat life."
     },
@@ -32,7 +32,7 @@
       "name": "Lily & Alfie",
       "image": "./images/AlieLily.jpg",
       "age": "4 months old",
-      "likes": 3,
+      "likes": 6,
       "Available": true,
       "Description": "Lily and Alfie are too precious! This brother-sister duo play as hard as they love! Immediately friendly with humans, they also likes dogs, other cats and children. These two will keep you entertained all of the time!"
     },
@@ -41,7 +41,7 @@
       "name": "Whinnie",
       "image": "./images/Whinnie.png",
       "age": "4 years old",
-      "likes": 2,
+      "likes": 5,
       "Available": true,
       "Description": "Whinnie is a confident street cat. She lived outside for many years before deciding she could use a little help from a kind human. Her ear is tipped as she was intended to be released but she warmed up to the inside life so quickly that she's here to stay!"
     },
@@ -50,45 +50,52 @@
       "name": "Mo",
       "image": "./images/Mo.png",
       "age": "3 months old",
-      "likes": 8,
+      "likes": 4,
       "Available": true,
-      "Description": "Baby Mo! Mo was caught along side his fiercely protective mothe and he couldn't be happier inside. He has CH, Cerebellar Hypoplasia, which is a syndrome that makes him a lttle wobbly when he walks. That doesn't stop him from playing and chasing toys though. This sweet kitten doesn't love dogs and children but is good with other cats."
+      "Description": "Baby Mo! Mo was caught along side his fiercely protective mothe and he couldn't be happier inside. He has CH, Cerebellar Hypoplasia, which is a syndrome that makes him a lttle wobbly when he walks. That doesn't stop him from playing. This sweet kitten doesn't love dogs but is good with other cats and children."
     },
     {
       "id": 7,
       "name": "Wink",
       "image": "./images/Wink.png",
       "age": "2.5 years old",
-      "likes": 7,
+      "likes": 8,
       "Available": true,
-      "Description": "Wink is a one eyed cat from 64th Street. Her partial vision has never stopped her from leading a full life. While not quite a kitten anymore, Wink is as playful and as curious as a kitten. She loves to chase balls and she loves to watch the snow fall!"
+      "Description": "Wink is a one eyed cat from 94th Street. Her partial vision has never stopped her from leading a full life. While not quite a kitten anymore, Wink is as playful and as curious as any precious baby. She loves to chase tiny toys and she loves to watch the snow fall!"
     },
     {
       "id": 8,
       "name": "Marley",
       "image": "./images/BonnieClyde.jpg",
       "age": "3 months old",
-      "likes": 6,
+      "likes": 8,
       "Available": false,
-      "Description": "This adorable brother-sister pair were found on 62nd Street. Clyde is quite sweet and affectionate. Big sister, Bonnie has a feisty side and loves to play. These two just want to be loved!"
+      "Description": "This adorable brother-sister pair were found on 92nd Street. Clyde is quite sweet, snuggly and affectionate. Big sister Bonnie has a feisty side and plays hard. These two just want to be loved! They are not good with dogs."
     },
     {
       "id": 9,
       "name": "Queen Fifi",
       "image": "./images/QueenFifi.png",
       "age": "6 years old",
-      "likes": 12,
+      "likes": 11,
       "Available": false,
-      "Description": "Everyone on 65th Street knows Queen Fifi. The local kids and parents alike would stop to say hi to her when she passed by. She has always been a bright spot for anyone she has met. Her adjustment to living indoors was slow at first. Now she is truly the Queen of any space she is in!"
+      "Description": "Everyone on 95th Street knows Queen Fifi and says hi when they pass her. She has always been a bright spot for her neighbors. Having been caught at about 5 years old, her adjustment to living indoors was slow at first. Now she is truly the Queen of any space she is in!"
     }
   ],
   "userSubmittedCats": [
     {
       "userName": "Sam",
       "newCatPicture": "https://static01.nyt.com/images/2021/09/14/science/07CAT-STRIPES/07CAT-STRIPES-mediumSquareAt3X-v2.jpg",
-      "catName": "Cat",
-      "newCatLocation": "outside",
+      "catName": "Catto",
+      "newCatLocation": "97th Street",
       "id": 0
+    },
+    {
+      "userName": "Lindsey",
+      "newCatPicture": "https://psmag.com/.image/t_share/MTYzMzE3NzI4MzUyOTM3MjYy/gettyimages-495236648.jpg",
+      "catName": "Little Mama",
+      "newCatLocation": "84th Street",
+      "id": 1
     }
   ],
   "userEmails": [
@@ -98,8 +105,8 @@
       "id": 0
     },
     {
-      "userEmail": "test@test.com",
-      "userInterestedIn": "Luna",
+      "userEmail": "test!test",
+      "userInterestedIn": "Wink",
       "id": 1
     }
   ]

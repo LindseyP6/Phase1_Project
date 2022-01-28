@@ -138,8 +138,8 @@ function addNewCat(username, catpic, catname, catlocation) {
         },
         body: JSON.stringify(newCat)
     })
-
-    displayNewCats(newCat)
+    let newCatContainer = [newCat]
+    displayNewCats(newCatContainer)
 }
 
 function displayNewCats(cats) {
@@ -162,7 +162,7 @@ function displayNewCats(cats) {
         displayCatLocation.textContent = `Cat Seen: ${cat.newCatLocation}`
         displayCatLocation.style.marginBottom = "100px"
 
-        newCatDiv.append(displayUserName, displayCatPic, displayNewCatName, displayCatLocation)
+        newCatDiv.append(displayCatPic, displayUserName, displayNewCatName, displayCatLocation)
         newCatContainer.append(newCatDiv)
     })
 }
