@@ -174,5 +174,6 @@ document.addEventListener("DOMContentLoaded", () => {
     newCatForm.addEventListener('submit', (e) => {
         e.preventDefault()
         addNewCat(e.target.name.value, e.target.pic.value, e.target.cat.value, e.target.location.value)
+        e.target.reset()
     })
 })
