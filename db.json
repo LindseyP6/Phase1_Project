@@ -71,15 +71,6 @@
       "likes": 8,
       "Available": false,
       "Description": "This adorable brother-sister pair were found on 92nd Street. Clyde is quite sweet, snuggly and affectionate. Big sister Bonnie has a feisty side and plays hard. These two just want to be loved! They are not good with dogs."
-    },
-    {
-      "id": 9,
-      "name": "Queen Fifi",
-      "image": "./images/QueenFifi.png",
-      "age": "6 years old",
-      "likes": 11,
-      "Available": false,
-      "Description": "Everyone on 95th Street knows Queen Fifi and says hi when they pass her. She has always been a bright spot for her neighbors. Having been caught at about 5 years old, her adjustment to living indoors was slow at first. Now she is truly the Queen of any space she is in!"
     }
   ],
   "userSubmittedCats": [
@@ -108,6 +99,11 @@
       "userEmail": "test!test",
       "userInterestedIn": "Wink",
       "id": 1
+    },
+    {
+      "userEmail": "",
+      "userInterestedIn": "Luna",
+      "id": 2
     }
   ]
 }
