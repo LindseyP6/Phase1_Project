@@ -5,7 +5,7 @@
       "name": "Luna",
       "image": "./images/LunaLu.png",
       "age": "3 years old",
-      "likes": 5,
+      "likes": 6,
       "Available": true,
       "Description": "Luna was the unofficial leader of her community on 95th Street.Confident, daring and friendly are just a few ways to describe her. This purrfect cat can thrive anywhere. She will be the perfect solo pet in any home."
     },
@@ -14,16 +14,16 @@
       "name": "Marley",
       "image": "./images/Marley.jpg",
       "age": "4 months old",
-      "likes": 6,
-      "Available": false,
+      "likes": 5,
+      "Available": true,
       "Description": "This sweet boy was plucked from a driveway on 94th Street. His purrs are so loud! Marley is friendly with dogs and other cats. He is still learning to be a kitten and could really use your help!"
     },
     {
       "id": 3,
       "name": "Pirate Jenny",
       "image": "./images/piratejenny.png",
-      "age": "2 months old",
-      "likes": 11,
+      "age": "6 months old",
+      "likes": 9,
       "Available": false,
       "Description": "Pirate Jenny was brought inside when she was just a few weeks old. She is a fiesty fighter but this little kitten is such a lover; she will give you kisses and licks! She might only have 1 eye but that doesn't stop her from lving her best cat life."
     },
@@ -32,7 +32,7 @@
       "name": "Lily & Alfie",
       "image": "./images/AlieLily.jpg",
       "age": "4 months old",
-      "likes": 6,
+      "likes": 8,
       "Available": true,
       "Description": "Lily and Alfie are too precious! This brother-sister duo play as hard as they love! Immediately friendly with humans, they also likes dogs, other cats and children. These two will keep you entertained all of the time!"
     },
@@ -41,8 +41,8 @@
       "name": "Whinnie",
       "image": "./images/Whinnie.png",
       "age": "4 years old",
-      "likes": 5,
-      "Available": true,
+      "likes": 7,
+      "Available": false,
       "Description": "Whinnie is a confident street cat. She lived outside for many years before deciding she could use a little help from a kind human. Her ear is tipped as she was intended to be released but she warmed up to the inside life so quickly that she's here to stay!"
     },
     {
@@ -50,7 +50,7 @@
       "name": "Mo",
       "image": "./images/Mo.png",
       "age": "3 months old",
-      "likes": 4,
+      "likes": 795,
       "Available": true,
       "Description": "Baby Mo! Mo was caught along side his fiercely protective mothe and he couldn't be happier inside. He has CH, Cerebellar Hypoplasia, which is a syndrome that makes him a lttle wobbly when he walks. That doesn't stop him from playing. This sweet kitten doesn't love dogs but is good with other cats and children."
     },
@@ -59,7 +59,7 @@
       "name": "Wink",
       "image": "./images/Wink.png",
       "age": "2.5 years old",
-      "likes": 8,
+      "likes": 9,
       "Available": true,
       "Description": "Wink is a one eyed cat from 94th Street. Her partial vision has never stopped her from leading a full life. While not quite a kitten anymore, Wink is as playful and as curious as any precious baby. She loves to chase tiny toys and she loves to watch the snow fall!"
     },
@@ -104,6 +104,16 @@
       "userEmail": "",
       "userInterestedIn": "Luna",
       "id": 2
+    },
+    {
+      "userEmail": "lindsey@lindsey.com",
+      "userInterestedIn": "Luna",
+      "id": 3
+    },
+    {
+      "userEmail": "lindsey@lindsey.com",
+      "userInterestedIn": "Wink",
+      "id": 4
     }
   ]
 }
